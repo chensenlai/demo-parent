@@ -10,3 +10,7 @@
 3. 入参有效性校验。
 4. 枚举类处理, 枚举统一继承BaseEnum, SpringMVC,mybatis和JsonUtil统一使用num作为枚举值,
 没有使用枚举ordinal,因为该和位置有关,容易导致错误, 数据库保存使用num, 因为数据库枚举字段的增减涉及到数据库变更。
+
+### /user/get/v2
+    依赖srobber-common, srobber-swagger包
+1. 接口文档地址: http://127.0.0.1:8080/app/doc.html   
