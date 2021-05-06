@@ -26,7 +26,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("/get")
+    @GetMapping("/get/v1")
     public JsonResult<UserEntity> getUser(@RequestParam("userId") @Range(message = "用户编号范围[1-10]",min = 1, max = 10) long userId) {
         UserEntity user = userService.getUser(userId);
         return JsonResult.ok(user);
